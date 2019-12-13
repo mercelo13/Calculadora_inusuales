@@ -1,1 +1,30 @@
-el que lee esta wea y viene del otro texto es muy muy gei
+//Numero perfecto
+#include <iostream>
+#include <math.h>
+#include <string>
+using namespace std;
+
+int Multiplos(int a){
+	for(int b = 1; b < a; b += 1){
+		int sum = 0;
+		if (a%b == 0){
+			std::cout << "UWU" << std::endl ;
+			sum = sum + b;
+			std::cout << sum << std::endl ;
+			if (sum ==b){
+				std::cout << "Es un numero perfecto"<< std:: endl ;
+			}
+		}
+		else{
+			std::cout << "No es un numero perfecto" << std:: endl ;
+			return 0;
+		}
+		return 0;
+	}
+	return 0;
+}
+int main(){
+	Multiplos(6);
+	return 0;
+}
+//no funciona totalmente, debo buscar otros fundamentos para rehacerlo.
