@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+
+int apocalypse(int y){
+    std::string x = std::to_string(y);
+    int n;
+    if(x.find("666") != std::string::npos){
+        std::cout << "Yes" << std::endl;
+        n = 1;
+    }
+    else{
+        std::cout << "No" << std::endl;
+        n = 0;
+    }
+    return n;
+}
