@@ -3,8 +3,7 @@
 #include <math.h>
 
 int apocalypse(int y){
-    int p;
-    double p = pow(2,y);
+    long long p = pow(2,y);
     std::string x = std::to_string(p);
     int n;
     if(x.find("666") != std::string::npos){
