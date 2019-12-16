@@ -2,7 +2,7 @@
 #include <string>
 #include <math.h>
 
-int apocalypse(int y){
+int apocalypse(float y){
     double p = pow(2,y);
     std::string x = std::to_string(p);
     int n;
@@ -15,4 +15,12 @@ int apocalypse(int y){
         n = 0;
     }
     return n;
+}
+
+//test uwu
+int main(){
+    int r = 157;
+    int y = apocalypse(r);
+    std::cout << y << std::endl;
+    return 0;
 }
