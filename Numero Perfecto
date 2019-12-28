@@ -1,30 +1,24 @@
-//Numero perfecto
-#include <iostream>
-#include <math.h>
-#include <string>
+// Número Perfecto.
+#include<iostream>
+#include<string.h>
+#include<math.h>
 using namespace std;
-
-int Multiplos(int a){
-	for(int b = 1; b < a; b += 1){
-		int sum = 0;
-		if (a%b == 0){
-			std::cout << "UWU" << std::endl ;
-			sum = sum + b;
-			std::cout << sum << std::endl ;
-			if (sum ==b){
-				std::cout << "Es un numero perfecto"<< std:: endl ;
-			}
-		}
-		else{
-			std::cout << "No es un numero perfecto" << std:: endl ;
-			return 0;
-		}
+int PerfectNumber(int a){
+	int b;
+	int sum = 0;
+	for (b=1; b < a; b++){
+		if (a % b == 0) sum += b;
+	}
+	if (sum == a){
+	cout << "El número es Perfecto" << endl;
+	}
+	else{
+		cout << "El número no es perfecto" << endl;
 		return 0;
 	}
 	return 0;
 }
 int main(){
-	Multiplos(6);
-	return 0;
+	PerfectNumber(8129);
 }
-//no funciona totalmente, debo buscar otros fundamentos para rehacerlo.
+
