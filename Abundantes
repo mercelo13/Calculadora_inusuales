@@ -1,1 +1,24 @@
-dejas de ser gei
+//numeros Abundantes
+#include <iostream>
+#include <string.h>
+#include <math.h>
+using namespace std;
+int Abundante(int a){
+	int b;
+	int sum = 0;
+	for (b=1; b < a; b++){
+		if (a % b == 0) sum += b;
+	}
+	if (sum > a){
+		cout << "El número es abundante" << endl;	
+	}
+	else{
+		cout << "El número no es Abundante" << endl;
+		return 0;
+	}
+	return 0;
+}
+int main(){
+	Abundante();
+}
+
