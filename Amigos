@@ -1,28 +1,16 @@
 #include <iostream>
 #include <cmath>
 
-bool is_prime(long n){
-    if(n < 2) {
-        return false;
-    }
-    for(long i = 2; i * i <= n; i++){
-        if ((n % i) == 0){
-            return false;
-        }
-    }
-    return true;
-}
-
 int friendship(long a,long b){
     long sum_a = 0;
     long sum_b = 0;
-    for(long i = 0;i <= a;i++){
-        if(is_prime(i) and ((a % i) == 0)){
+    for(long i = 1;i < a;i++){
+        if((a % i) == 0){
             sum_a += i;
         }
     }
-    for(long j = 0;j <= b;j++){
-        if(is_prime(j) and ((b % j) == 0)){
+    for(long j = 1;j < b;j++){
+        if((b % j) == 0){
             sum_b += j;
         }
     }
@@ -33,6 +21,8 @@ int friendship(long a,long b){
         return 0;
     }
 }
+
+//Test UWU
 
 int main(){
     int n = friendship(284,220);
