@@ -15,6 +15,6 @@ void palindrom(){
     cout<<reverse<<endl;
 }
 int main(){
-    palindron();
+    palindrom();
     return 0;
 }
