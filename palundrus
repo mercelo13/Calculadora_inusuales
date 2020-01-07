@@ -4,17 +4,25 @@
 
 using namespace std;
 
-void palindrom(){
-    int a ;
-    cout<<"escriba su numero: ";
-    cin >>a;
-    string reverse = to_string(a);
-    int H = reverse.length();
-    for (int i = 0; i<H ; i++ )
-        swap (reverse[i];reverse[H-1-i]);
-    cout<<reverse<<endl;
+void palindrom(int a){
+    cout<<"escribe un numero: ";
+    cin>>a;
+    string word = to_string(a);
+    string aux_word = "";
+    
+    for (int i = word.size();i>=0; i--)
+        aux_word += word[i];
+        
+    cout <<"el numero normal es: "<<word<<endl;
+    cout <<"el numero invertido es: "<<aux_word<<endl;
+    if (word == aux_word){
+        cout<<"como el numero normal y el invertido son iguales, es un numero palindromico!!!";
+    }else{
+        cout<<"el numero normal no es igual que el invertido, por lo tanto no es palindromico.";
+    }
 }
+
 int main(){
-    palindrom();
+    palindrom(0);
     return 0;
 }
