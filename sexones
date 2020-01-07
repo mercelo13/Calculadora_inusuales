@@ -20,7 +20,7 @@ void sexy(int N, int S){
         }
         a ++ ;
     }
-    if ((S - N) == 5){
+    if ((S - N) == 6){
     cout<<"¡¡¡Felicidades, tus numeros son sexys!!!"<<endl;
     break;
     }    
