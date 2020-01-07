@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <cmath>
 #include <cstring>
@@ -22,7 +21,8 @@ void sexy(int N, int S){
     }
     if ((S - N) == 6){
     cout<<"¡¡¡Felicidades, tus numeros son sexys!!!"<<endl;
-    break;
+    } else {
+    cout<<"F, tus numeros no son sexys :("<<endl;
     }    
 }
 
@@ -31,3 +31,5 @@ int main()
 sexy(5,11);
 return  0 ;
 }
+
+
