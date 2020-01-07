@@ -9,10 +9,10 @@ void palindrom(int a){
     cin>>a;
     string word = to_string(a);
     string aux_word = "";
-    
-    for (int i = word.size();i>=0; i--)
+    float count = (word.size() - 1);
+    for (int i = (count);i>=0; i--)
         aux_word += word[i];
-        
+    
     cout <<"el numero normal es: "<<word<<endl;
     cout <<"el numero invertido es: "<<aux_word<<endl;
     if (word == aux_word){
