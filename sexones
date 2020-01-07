@@ -1,1 +1,33 @@
 
+#include <iostream>
+#include <cmath>
+#include <cstring>
+
+using namespace std;
+
+void sexy(int N, int S){
+    int a = 2;
+    while ((a < N) and (a < S)){
+        int b = N%a;  
+        if (b == 0){
+            a = b;
+            break;
+        }
+        int c = S%a;
+        if (c == 0){
+            a = c;
+            break;
+        }
+        a ++ ;
+    }
+    if ((S - N) == 5){
+    cout<<"¡¡¡Felicidades, tus numeros son sexys!!!"<<endl;
+    break;
+    }    
+}
+
+int main()
+{
+sexy(5,11);
+return  0 ;
+}
