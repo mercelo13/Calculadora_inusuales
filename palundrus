@@ -16,9 +16,9 @@ void palindrom(int a){
     cout <<"el numero normal es: "<<word<<endl;
     cout <<"el numero invertido es: "<<aux_word<<endl;
     if (word == aux_word){
-        cout<<"como el numero normal y el invertido son iguales, es un numero palindromico!!!";
+        cout<<"como el numero normal y el invertido son iguales, es un numero palindromico!!!"<<endl;
     }else{
-        cout<<"el numero normal no es igual que el invertido, por lo tanto no es palindromico.";
+        cout<<"el numero normal no es igual que el invertido, por lo tanto no es palindromico."<<endl;
     }
 }
 
